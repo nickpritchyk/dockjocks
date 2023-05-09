@@ -1,0 +1,38 @@
+.jumbo-header {
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+    align-items: center;
+    height: 500px;
+    width: 1000px;
+    margin-top: 50px;
+    border: 1px solid whitesmoke;
+    box-shadow: 1px 1px 5px 1px;
+}
+
+
+.about {
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid black;
+    height: 350px;
+    width: 1000px;
+}
+
+.home-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    .jumbo-header {
+        height: 200px;
+        width: 350px;
+        text-align: center;
+    }
+}
