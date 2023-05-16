@@ -68,3 +68,15 @@ body {
 
     
 }
+
+#nav-btn {
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 75px;
+    cursor: pointer;
+}
+
+#nav-btn:hover {
+    transform: scale(1.1);
+}

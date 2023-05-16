@@ -4,13 +4,15 @@ import "../styles/NavPopup.css";
 export default function NavPopup({setNavPop}) {
     return(
         <div className="popup">
-            <button className="close-btn" onClick={()=> {
-                setNavPop(false);
-            }}>
-                x
-            </button>
-            <nav className='nav'>
-                <ul className='nav-list'>
+            <div className="close-btn">
+                <button onClick={()=> {
+                    setNavPop(false);
+                }}>
+                    x
+                </button>
+            </div>
+            <nav className='nav-pop'>
+                <ul>
                     <li> 
                         <NavLink to="/about">
                             About

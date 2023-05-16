@@ -19,13 +19,11 @@ function Navbar() {
                         <NavLink to="/gallery"> Gallery </NavLink>
                     </li>
                 </ul>
-                <button onClick={() => setNavPop(true)}> Nav </button>
-                { navPop && <NavPopup setNavPop={ setNavPop }/> }
+                <button id="nav-btn" onClick={() => setNavPop(true)}> = </button>
             </nav>
+            { navPop && <NavPopup setNavPop={ setNavPop }/> }
         </header>
     );
 }
-
-// move button and Navpopup out of nav class
 
 export default Navbar;
