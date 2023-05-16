@@ -15,10 +15,12 @@ body {
     align-items: center;
     gap: 2rem; 
     padding: 0 1rem;
+    margin-top: 10px
 }
 
-.site-title {
+#site-title {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .nav a {
@@ -36,12 +38,31 @@ body {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin: auto;
 }
 
-.active {
-    background-color: #555;
+#nav-pages a.active {
+    text-decoration: underline;
 }
 
 .nav li:hover {
-    background-color: #006699;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+    }
+
+    .nav button {
+        display: flex;
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav button {
+        display: none;
+    }
 }

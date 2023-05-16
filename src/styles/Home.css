@@ -1,13 +1,14 @@
 .jumbo-header {
     display: flex;
     justify-content: center;
-    /* margin: auto; */
     align-items: center;
-    height: 500px;
-    width: 1000px;
-    margin-top: 50px;
-    border: 1px solid whitesmoke;
-    box-shadow: 1px 1px 5px 1px;
+    height: 700px;
+    width: 100%;
+    margin-top: 35px;
+    /* border: 1px solid whitesmoke; */
+    box-shadow: 1px 1px 1px 1px;
+    background-image: url("/public/images/boat-detailing-stock-1.jpg");
+    background-size: cover;
 }
 
 

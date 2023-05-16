@@ -1,23 +1,31 @@
 import "../styles/Navbar.css";
 import { NavLink, Link } from 'react-router-dom';
+import { useState } from 'react';
+import NavPopup from './NavPopup';
 
 
 function Navbar() {
+    const [navPop, setNavPop] = useState(false);
+
     return(
         <header>
             <nav className="nav">
-                <Link to="/" className="site-title"> DockJocks </Link>
+                <NavLink to="/" id="site-title"> DockJocks </NavLink>
                 <ul>
-                    <li>
-                        <NavLink to="/rent"> About </NavLink>
+                    <li id="nav-pages">
+                        <NavLink to="/about"> About </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/about"> Gallery </NavLink>
+                    <li id="nav-pages">
+                        <NavLink to="/gallery"> Gallery </NavLink>
                     </li>
                 </ul>
+                <button onClick={() => setNavPop(true)}> Nav </button>
+                <NavPopup />
             </nav>
         </header>
     );
 }
+
+// move button and Navpopup out of nav class
 
 export default Navbar;
