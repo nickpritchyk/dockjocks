@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import "../styles/NavPopup.css";
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 export default function NavPopup({setNavPop}) {
     return(
@@ -8,7 +9,7 @@ export default function NavPopup({setNavPop}) {
                 <button onClick={()=> {
                     setNavPop(false);
                 }}>
-                    x
+                    <KeyboardDoubleArrowRightIcon style={{fontSize: 'larger'}} />
                 </button>
             </div>
             <nav className='nav-pop'>

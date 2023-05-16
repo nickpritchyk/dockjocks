@@ -2,6 +2,7 @@ import "../styles/Navbar.css";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import NavPopup from './NavPopup';
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 function Navbar() {
@@ -19,7 +20,7 @@ function Navbar() {
                         <NavLink to="/gallery"> Gallery </NavLink>
                     </li>
                 </ul>
-                <button id="nav-btn" onClick={() => setNavPop(true)}> = </button>
+                <button id="nav-btn" onClick={() => setNavPop(true)}> <MenuIcon style={{fontSize: '50%'}} /> </button>
             </nav>
             { navPop && <NavPopup setNavPop={ setNavPop }/> }
         </header>
