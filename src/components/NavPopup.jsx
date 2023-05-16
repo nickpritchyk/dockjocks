@@ -1,13 +1,26 @@
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "../styles/NavPopup.css";
 
-export default function NavPopup() {
+export default function NavPopup({setNavPop}) {
     return(
         <div className="popup">
-            <nav>
-                <ul>
-                    <li> About </li>
-                    <li> Gallery</li>
+            <button className="close-btn" onClick={()=> {
+                setNavPop(false);
+            }}>
+                x
+            </button>
+            <nav className='nav'>
+                <ul className='nav-list'>
+                    <li> 
+                        <NavLink to="/about">
+                            About
+                        </NavLink> 
+                    </li>
+                    <li> 
+                        <NavLink to="/gallery">
+                            Gallery
+                        </NavLink>  
+                    </li>
                 </ul>
             </nav>
         </div>

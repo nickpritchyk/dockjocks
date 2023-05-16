@@ -1,5 +1,5 @@
 import "../styles/Navbar.css";
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import NavPopup from './NavPopup';
 
@@ -20,7 +20,7 @@ function Navbar() {
                     </li>
                 </ul>
                 <button onClick={() => setNavPop(true)}> Nav </button>
-                <NavPopup />
+                { navPop && <NavPopup setNavPop={ setNavPop }/> }
             </nav>
         </header>
     );

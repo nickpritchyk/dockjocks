@@ -8,4 +8,36 @@
     align-items: center;
     justify-content: center;
     color: black;
+    background:gainsboro;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:75%;
+    
+}
+
+.nav ul  {
+    list-style: none;
+}
+
+.close-btn {
+    display: flex;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 5%;
+    width: 30px;
+    height: 30px;
+    font-size: 35px;
+}
+
+.close-btn:hover {
+    font-size: 40px;
+}
+
+@media (min-width: 768px) {
+    .popup {
+        display: none;
+    }
 }
