@@ -2,15 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 100%;
     width: 100%;
-    margin-top: 35px;
-    /* border: 1px solid whitesmoke; */
     box-shadow: 1px 1px 1px 1px;
     background-image: url("/public/images/boat-detailing-stock-1.jpg");
     background-size: cover;
 }
 
+/* .top-border {
+    height: 10%;
+    width: 100%;
+    background-color: gainsboro;
+} */
 
 .about {
     display: flex;
@@ -20,7 +23,7 @@
     margin-top: 50px;
     text-align: center;
     border: 1px solid black;
-    height: 350px;
+    height: 25%;
     width: 1000px;
 }
 
@@ -28,6 +31,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 @media screen and (max-width: 600px) {

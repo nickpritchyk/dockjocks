@@ -5,6 +5,7 @@ function App() {
 
   return (
     <div className="home-div">
+        <div className="top-border"></div>
         <div className="jumbo-header">
             <h1 className="home-header">
                 Welcome to DockJocks.
